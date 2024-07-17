@@ -8,7 +8,7 @@
 
         <div class="count mt-4 h4">
          Il y a 
-          {{ ingredients.getTotalItemCount }}
+         {{ingredients.getTotalItemCount is same as([]) ? "0" : ingredients.getTotalItemCount}}
           ingrédients au total.
         </div>
 
